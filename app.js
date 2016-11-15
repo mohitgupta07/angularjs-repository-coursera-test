@@ -5,7 +5,10 @@
     'use strict';
     
     angular.module('myFirstApp',[])
-        .controller('myFirstController',function () {
-            
+        .controller('myFirstController',function ($scope) {
+            $scope.name="mohit";
+            $scope.hellofunction=function () {
+                return "hey this is a function ";
+            }
         })
 })();
